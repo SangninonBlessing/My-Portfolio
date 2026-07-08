@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import photo from '/studdiary-Logo (2).png'
+import myCV from '/Blessing Sangninon Resume.pdf'
 function Hero() {
   return (
     <section
@@ -131,7 +132,7 @@ function Hero() {
 
 
             <a
-              href="/Blessing Sangnionon Resume.pdf"
+              href={myCV}
               download
               className="
                 border
@@ -231,7 +232,7 @@ function Hero() {
 
             <img
 
-              src="/Blessing ID photo.png"
+              src={photo}
 
               alt="Blessing Sangninon"
 
