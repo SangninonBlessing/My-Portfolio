@@ -20,7 +20,7 @@ const projects = [
       "Tailwind CSS"
     ],
 
-    github: "https://github.com/https://github.com/SangninonBlessing/StudDiary",
+    github: "/https://github.com/SangninonBlessing/StudDiary",
     
     featured: true
   }
