@@ -1,4 +1,4 @@
-import StudDiaryphoto from '/studdiary-Logo (2).png'
+import StudDiaryphoto from '/My-Portfolio/studdiary-Logo (2).png'
 
 const projects = [
 
@@ -20,7 +20,7 @@ const projects = [
       "Tailwind CSS"
     ],
 
-    github: "https://github.com/SangninonBlessing",
+    github: "https://github.com/https://github.com/SangninonBlessing/StudDiary",
     
     featured: true
   }
