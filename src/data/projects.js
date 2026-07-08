@@ -1,4 +1,4 @@
-import StudDiaryphoto from '/My-Portfolio/studdiary-Logo (2).png'
+import StudDiaryphoto from '/studdiary-Logo.png'
 
 const projects = [
 
