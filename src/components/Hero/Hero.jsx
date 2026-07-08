@@ -164,7 +164,7 @@ function Hero() {
           >
 
             <a
-              href="#"
+              href="https://github.com/SangninonBlessing"
               className="
                 text-gray-700
                 hover:text-primary
@@ -175,7 +175,7 @@ function Hero() {
 
 
             <a
-              href="#"
+              href="www.linkedin.com/in/blessing-sangninon"
               className="
                 text-gray-700
                 hover:text-primary
