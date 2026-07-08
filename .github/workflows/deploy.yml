@@ -27,12 +27,19 @@ jobs:
         run: npm ci
       
       - name: Build the project
-        run: npm run build  # 👈 C'est cette commande qui va créer le dossier dist/
+        run: npm run build
+      
+      - name: Afficher le contenu de dist/  # 👈 NOUVEAU
+        run: |
+          echo "Contenu de dist/ :"
+          ls -la dist/
+          echo "Contenu de dist/assets/ :"
+          ls -la dist/assets/ || echo "Le dossier assets/ n'existe PAS !"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # 👈 Assurez-vous que c'est le bon dossier
+          path: ./dist
 
   deploy:
     environment:
