@@ -1,3 +1,4 @@
+
 const creativeWorks = [
       {
         id: 1,
@@ -60,7 +61,7 @@ const creativeWorks = [
         file: "/pdf/Presentation Psy-sociale.pdf",
         tools: ["Canva", "PowerPoint"],
         year: "2026",
-        description: "Design of a course presentation",
+        description: "Design of a course's presentation",
         tags: ["Training", "Course", "Design"]
     },
     
@@ -73,7 +74,7 @@ const creativeWorks = [
         file: "/pdf/Présentation gestion performance.pdf",
         tools: ["Canva", "PowerPoint"],
         year: "2026",
-        description: "Design of a course presentation",
+        description: "Design of a course's presentation",
         tags: ["Training", "Course", "Design"]
     },
     

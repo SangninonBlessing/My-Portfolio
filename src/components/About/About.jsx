@@ -17,7 +17,7 @@ function About() {
     {
       icon: <FaPenNib />,
       title: "Content Creation",
-      text: "Sharing ideas through educational, visual and creative content."
+      text: "Sharing ideas through inspiring, visual and creative content."
     }
   ];
 

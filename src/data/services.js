@@ -22,7 +22,7 @@ const services = [
     icon: FaBullhorn,
     title: "Content Creation",
     description:
-      "Creating educational, visual and engaging content that communicates ideas effectively.",
+      "Creating inspiring, visual and engaging content that communicates ideas effectively.",
   },
   
 ];

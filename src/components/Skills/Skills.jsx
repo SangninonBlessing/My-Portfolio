@@ -25,7 +25,6 @@ skills:[
 "Node.js",
 "Express.js",
 "MySQL",
-"REST APIs"
 ]
 },
 
@@ -39,8 +38,7 @@ skills:[
 "Figma", 
 "PowerPoint", 
 "Publisher", 
-"Filmora", 
-"Inshot", 
+ 
 ]
 },
 
@@ -51,7 +49,9 @@ title:"Content Creation",
 skills:[
 "Storytelling",
 "Writing",
-"Social Media Content"
+"Social Media Content",
+"Filmora", 
+"Inshot",
 ]
 },
 

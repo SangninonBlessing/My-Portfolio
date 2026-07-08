@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import photo from '/studdiary-Logo (2).png'
+import photo from '/Blessing ID photo.png'
 import myCV from '/Blessing Sangninon Resume.pdf'
 function Hero() {
   return (
@@ -127,7 +127,7 @@ function Hero() {
                 transition
               "
             >
-              Voir mes projets
+              My projects
             </Link>
 
 
@@ -176,7 +176,7 @@ function Hero() {
 
 
             <a
-              href="www.linkedin.com/in/blessing-sangninon"
+              href="https://www.linkedin.com/in/blessing-sangninon/"
               className="
                 text-gray-700
                 hover:text-primary
