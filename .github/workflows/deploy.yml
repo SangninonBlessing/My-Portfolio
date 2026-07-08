@@ -26,13 +26,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Build
-        run: npm run build
+      - name: Build the project
+        run: npm run build  # 👈 C'est cette commande qui va créer le dossier dist/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./dist  # 👈 Assurez-vous que c'est le bon dossier
 
   deploy:
     environment:
