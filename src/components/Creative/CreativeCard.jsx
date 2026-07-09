@@ -39,12 +39,18 @@ function CreativeCard({ work, onPreview, onOpenDocument }) {
     const typeInfo = getTypeInfo();
 
     const handleAction = () => {
+        console.log("🔍 work.type =", work.type);
+        console.log("🔍 work.file =", work.file);
+        
         if (work.type === "document" || work.type === "pdf") {
+            console.log("✅ C'est un document, tentative d'ouverture");
             const pdfUrl = work.file.startsWith('http') 
                 ? work.file 
                 : `${window.location.origin}${work.file}`;
+            console.log("📄 URL du PDF :", pdfUrl);
             window.open(pdfUrl, '_blank');
         } else {
+            console.log("🖼️ C'est une image, aperçu");
             onPreview(work);
         }
     };
