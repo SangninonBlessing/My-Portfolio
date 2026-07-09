@@ -40,7 +40,10 @@ function CreativeCard({ work, onPreview, onOpenDocument }) {
 
     const handleAction = () => {
         if (work.type === "document" || work.type === "pdf") {
-            onOpenDocument(work.file);
+            const pdfUrl = work.file.startsWith('http') 
+                ? work.file 
+                : `${window.location.origin}${work.file}`;
+            window.open(pdfUrl, '_blank');
         } else {
             onPreview(work);
         }

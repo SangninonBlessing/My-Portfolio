@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import photo from '/Blessing ID photo.png'
-import myCV from '/Blessing Sangninon Resume.pdf'
+import myCV from '/Blessing-Sangninon-Resume.pdf'
 function Hero() {
     return (
         <section
