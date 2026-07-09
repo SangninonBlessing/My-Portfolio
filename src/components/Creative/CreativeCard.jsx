@@ -39,18 +39,18 @@ function CreativeCard({ work, onPreview, onOpenDocument }) {
     const typeInfo = getTypeInfo();
 
     const handleAction = () => {
-        console.log("🔍 work.type =", work.type);
-        console.log("🔍 work.file =", work.file);
-        
         if (work.type === "document" || work.type === "pdf") {
-            console.log("✅ C'est un document, tentative d'ouverture");
+            // Construire l'URL absolue du PDF
             const pdfUrl = work.file.startsWith('http') 
                 ? work.file 
                 : `${window.location.origin}${work.file}`;
-            console.log("📄 URL du PDF :", pdfUrl);
-            window.open(pdfUrl, '_blank');
+            
+            // Utiliser Google Docs Viewer
+            const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(pdfUrl)}&embedded=true`;
+            
+            // Ouvrir dans un nouvel onglet
+            window.open(viewerUrl, '_blank');
         } else {
-            console.log("🖼️ C'est une image, aperçu");
             onPreview(work);
         }
     };
