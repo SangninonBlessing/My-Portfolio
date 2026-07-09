@@ -47,7 +47,8 @@ function Creative() {
 
     // Function to open document in a new window
     const openDocument = (url) => {
-        window.open(url, '_blank');
+        window.open(url, '_blank');const absoluteUrl = url.startsWith('http') ? url : `${window.location.origin}${url}`;
+        window.open(absoluteUrl, '_blank');
     };
 
     // Custom YouTube parameters

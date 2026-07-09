@@ -48,21 +48,19 @@ function CreativeCard({ work, onPreview, onOpenDocument }) {
 
     const handleDownload = async (e) => {
         e.stopPropagation();
-            try {
-                const response = await fetch(work.file);
-                const blob = await response.blob();
-                const url = window.URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                    link.href = url;
-                    link.download = `${work.title}.${work.file.split('.').pop()}`;
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                    window.URL.revokeObjectURL(url);
-            } catch (error) {
-            // Fallback: open in new tab
-                window.open(work.file, '_blank');
-            }
+        
+        try {
+            // Essayer le téléchargement direct
+            const link = document.createElement('a');
+            link.href = work.file;
+            link.download = work.file.split('/').pop();
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (error) {
+            // En cas d'échec, ouvrir dans un nouvel onglet
+            window.open(work.file, '_blank');
+        }
     };
 
     return (
