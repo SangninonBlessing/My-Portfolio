@@ -46,17 +46,18 @@ function Creative() {
     }, [activeFilter]);
 
     // Function to open document in a new window
+  
     const openDocument = (url) => {
-        const absoluteUrl = url.startsWith('http') ? url : `${window.location.origin}${url}`;
+    
+        // Construire l'URL absolue du PDF
+        const baseUrl = import.meta.env.BASE_URL || '/';
+        const absoluteUrl = url.startsWith('http') ? url : `${window.location.origin}${baseUrl}${url.replace(/^\//, '')}`;
         
-        // D'abord, essayer d'ouvrir directement
-        const newWindow = window.open(absoluteUrl, '_blank');
+        // Utiliser le visualiseur PDF de Google
+        const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`;
         
-        // Si ça échoue, utiliser Google Docs Viewer
-        if (!newWindow) {
-            const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`;
-            window.open(viewerUrl, '_blank');
-        }
+        // Ouvrir dans un nouvel onglet
+        window.open(viewerUrl, '_blank');
     };
 
     // Custom YouTube parameters
