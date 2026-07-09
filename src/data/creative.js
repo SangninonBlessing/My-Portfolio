@@ -3,10 +3,6 @@ import Photo2 from '/images/The-power-of-the-in-between.png'
 import Photo3 from '/images/Tout-va-bien-se-passer.png'
 import MissimThumbnail from '/thumbnails/Missim-Partners.png'
 import MissimPdf from '/pdf/Présentation-Missim-Partners.pdf'
-import PsyThumbnail from '/thumbnails/psy-sociale.png'
-import PsyPdf from '/pdf/Présentation-Psy-sociale.pdf'
-import PerfThumbnail from '/thumbnails/gestion-performance.png'
-import PerfPdf from '/pdf/Présentation-gestion-performance.pdf'
 
 const creativeWorks = [
     {
@@ -56,30 +52,6 @@ const creativeWorks = [
         year: "2026",
         description: "Design of the company's presentation",
         tags: ["Presentation", "Business", "Marketing"]  
-    },
-    {
-        id: 5,
-        title: "Presentation of course",
-        type: "document",
-        category: "Design",
-        thumbnail: PsyThumbnail,
-        file: PsyPdf,
-        tools: ["Canva", "PowerPoint"],
-        year: "2026",
-        description: "Design of a course's presentation",
-        tags: ["Training", "Course", "Design"]
-    },
-    {
-        id: 6,
-        title: "Presentation of course",
-        type: "document",
-        category: "Design",
-        thumbnail: PerfThumbnail,
-        file: PerfPdf,
-        tools: ["Canva", "PowerPoint"],
-        year: "2026",
-        description: "Design of a course's presentation",
-        tags: ["Training", "Course", "Design"]
     }
 ];
 
