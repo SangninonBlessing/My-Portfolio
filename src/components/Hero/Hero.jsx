@@ -131,15 +131,23 @@ function Hero() {
                     </Link>
 
 
-                    <button
-                        onClick={() => {
-                            const pdfUrl = '/My-Portfolio/pdf/Blessing-Sangninon-Resume.pdf';
-                            const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(window.location.origin + pdfUrl)}&embedded=true`;
-                            window.open(viewerUrl, '_blank');
-                        }}
+                    <a
+                        href={myCV}
+                        download
+                        className="
+                            border
+                            border-primary
+                            text-primary
+                            px-6
+                            py-3
+                            rounded-full
+                            hover:bg-primary
+                            hover:text-white
+                            transition
+                        "
                     >
-                        Download CV
-                    </button>
+                        Download CV 
+                    </a>
 
 
                     </div>

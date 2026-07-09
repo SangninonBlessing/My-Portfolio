@@ -40,16 +40,8 @@ function CreativeCard({ work, onPreview, onOpenDocument }) {
 
     const handleAction = () => {
         if (work.type === "document" || work.type === "pdf") {
-            // Construire l'URL absolue du PDF
-            const pdfUrl = work.file.startsWith('http') 
-                ? work.file 
-                : `${window.location.origin}${work.file}`;
             
-            // Utiliser Google Docs Viewer
-            const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(pdfUrl)}&embedded=true`;
-            
-            // Ouvrir dans un nouvel onglet
-            window.open(viewerUrl, '_blank');
+            onOpenDocument(work.file);
         } else {
             onPreview(work);
         }

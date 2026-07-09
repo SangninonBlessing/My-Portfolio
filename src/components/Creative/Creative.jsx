@@ -48,25 +48,13 @@ function Creative() {
     // Function to open document in a new window
   
     const openDocument = (url) => {
-        const baseUrl = import.meta.env.BASE_URL || '/';
-        const absoluteUrl = url.startsWith('http') ? url : `${window.location.origin}${baseUrl}${url.replace(/^\//, '')}`;
+        // Construire une URL absolue si nécessaire
+        const absoluteUrl = url.startsWith('http') 
+            ? url 
+            : `${window.location.origin}${url}`;
         
-        console.log("URL du PDF :", url);
-        console.log("URL absolue :", absoluteUrl);
-        
-        // Vérifier si le fichier existe
-        fetch(absoluteUrl)
-            .then(response => {
-                console.log("Statut HTTP :", response.status);
-                console.log("Type de contenu :", response.headers.get('content-type'));
-                if (!response.ok) {
-                    console.error("Le PDF n'a pas pu être chargé");
-                }
-            })
-            .catch(error => console.error("Erreur de chargement :", error));
-        
-        const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`;
-        window.open(viewerUrl, '_blank');
+        // Ouvrir dans un nouvel onglet
+        window.open(absoluteUrl, '_blank');
     };
 
     // Custom YouTube parameters
