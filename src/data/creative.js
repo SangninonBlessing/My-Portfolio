@@ -1,3 +1,13 @@
+import Photo1 from '/images/God always answer those who pray to Him ardantly.png'
+import Photo2 from '/images/The power of the in-between.png'
+import Photo3 from '/images/Tout va bien se passer.png'
+import MissimThumbnail from '/thumbnails/Presentation Missim Partners.png'
+import MissimPdf from '/pdf/Présentation de Missim Partners.pdf'
+import PsyThumbnail from '/thumbnails/psy-sociale.png'
+import PsyPdf from '/pdf/Presentation Psy-sociale.pdf'
+import PerfThumbnail from '/thumbnails/gestion performance.png'
+import PerfPdf from '/pdf/Presentation gestion performance.pdf'
+
 
 const creativeWorks = [
       {
@@ -5,8 +15,8 @@ const creativeWorks = [
         title: "God always answers",
         type: "image",
         category: "Design",
-        thumbnail: "/images/God always answer those who pray to Him ardantly.png",
-        file: "/images/God always answer those who pray to Him ardantly.png",
+        thumbnail: Photo1,
+        file: Photo1,
         tools: ["DESIGN.COM", "Canva"],
         year: "2026",
         description: "Image of a girl praying fervently.",
@@ -18,8 +28,8 @@ const creativeWorks = [
         title: "The power of the in-between",
         type: "image",
         category: "Design",
-        thumbnail: "/images/The power of the in-between is when God trust you for the little things and these little victories shape the future and the big victories that you will have later in life..png",
-        file: "/images/The power of the in-between is when God trust you for the little things and these little victories shape the future and the big victories that you will have later in life..png",
+        thumbnail: Photo2,
+        file: Photo2,
         tools: ["Canva", "AI"],
         year: "2026",
         description: "Explaining the power of trusting God in your waiting season.",
@@ -31,8 +41,8 @@ const creativeWorks = [
         title: "Tout va bien se passer",
         type: "image",
         category: "Design",
-        thumbnail: "/images/Tout va bien se passer.png",
-        file: "/images/Tout va bien se passer.png",
+        thumbnail: Photo3,
+        file: Photo3,
         tools: ["Canva"],
         year: "2025",
         description: "Inspirational message for wallpaper",
@@ -44,8 +54,8 @@ const creativeWorks = [
         title: "Presentation of MISSIM PARTNERS",
         type: "document",
         category: "Branding",
-        thumbnail: "/thumbnails/Presentation Missim Partners.png",
-        file: "/pdf/Présentation de Missim Partners.pdf",
+        thumbnail: MissimThumbnail,
+        file: MissimPdf,
         tools: ["Canva"],
         year: "2026",
         description: "Design of the company's presentation",
@@ -57,8 +67,8 @@ const creativeWorks = [
         title: "Presentation of course",
         type: "document",
         category: "Design",
-        thumbnail: "/thumbnails/psy-sociale.png",
-        file: "/pdf/Presentation Psy-sociale.pdf",
+        thumbnail: PsyThumbnail,
+        file: PsyPdf,
         tools: ["Canva", "PowerPoint"],
         year: "2026",
         description: "Design of a course's presentation",
@@ -70,8 +80,8 @@ const creativeWorks = [
         title: "Presentation of course",
         type: "document",
         category: "Design",
-        thumbnail: "/thumbnails/gestion performance.png",
-        file: "/pdf/Présentation gestion performance.pdf",
+        thumbnail: PerfThumbnail,
+        file: PerfPdf,
         tools: ["Canva", "PowerPoint"],
         year: "2026",
         description: "Design of a course's presentation",
