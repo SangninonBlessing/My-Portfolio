@@ -47,8 +47,16 @@ function Creative() {
 
     // Function to open document in a new window
     const openDocument = (url) => {
-        window.open(url, '_blank');const absoluteUrl = url.startsWith('http') ? url : `${window.location.origin}${url}`;
-        window.open(absoluteUrl, '_blank');
+        const absoluteUrl = url.startsWith('http') ? url : `${window.location.origin}${url}`;
+        
+        // D'abord, essayer d'ouvrir directement
+        const newWindow = window.open(absoluteUrl, '_blank');
+        
+        // Si ça échoue, utiliser Google Docs Viewer
+        if (!newWindow) {
+            const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`;
+            window.open(viewerUrl, '_blank');
+        }
     };
 
     // Custom YouTube parameters
