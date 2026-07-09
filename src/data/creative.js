@@ -1,12 +1,12 @@
-import Photo1 from '/images/God always answer those who pray to Him ardantly.png'
-import Photo2 from '/images/The power of the in-between.png'
-import Photo3 from '/images/Tout va bien se passer.png'
-import MissimThumbnail from '/thumbnails/Presentation Missim Partners.png'
-import MissimPdf from '/pdf/Présentation de Missim Partners.pdf'
+import Photo1 from '/images/God-always-answer.png'
+import Photo2 from '/images/The-power-of-the-in-between.png'
+import Photo3 from '/images/Tout-va-bien-se-passer.png'
+import MissimThumbnail from '/thumbnails/Presentation-Missim-Partners.png'
+import MissimPdf from '/pdf/Présentation-Missim-Partners.pdf'
 import PsyThumbnail from '/thumbnails/psy-sociale.png'
-import PsyPdf from '/pdf/Presentation Psy-sociale.pdf'
-import PerfThumbnail from '/thumbnails/gestion performance.png'
-import PerfPdf from '/pdf/Presentation gestion performance.pdf'
+import PsyPdf from '/pdf/Présentation-Psy-sociale.pdf'
+import PerfThumbnail from '/thumbnails/gestion-performance.png'
+import PerfPdf from '/pdf/Présentation-gestion-performance.pdf'
 
 const creativeWorks = [
   {
