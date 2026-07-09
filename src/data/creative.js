@@ -2,7 +2,7 @@ import Photo1 from '/images/God-always-answer.png'
 import Photo2 from '/images/The-power-of-the-in-between.png'
 import Photo3 from '/images/Tout-va-bien-se-passer.png'
 import MissimThumbnail from '/thumbnails/Missim-Partners.png'
-import MissimPdf from '/pdf/Présentation-Missim-Partners.pdf'
+import MissimPdf from '/pdf/Missim.pdf'
 
 const creativeWorks = [
     {
