@@ -5,187 +5,181 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 function ProjectCard({project}){
 
 
-return (
+    return (
 
-<motion.div
+        <motion.div
 
-whileHover={{y:-10}}
+            whileHover={{y:-10}}
 
-className="
-bg-white
-rounded-2xl
-overflow-hidden
-shadow-sm
-hover:shadow-xl
-transition
-"
+            className="
+                bg-white
+                rounded-2xl
+                overflow-hidden
+                shadow-sm
+                hover:shadow-xl
+                transition
+            "
 
->
+        >
 
 
-<img
+            <img
 
-src={project.image}
+            src={project.image}
 
-alt={project.title}
+            alt={project.title}
 
-className="
-w-full
-h-125
-object-cover
-"
+            className="
+            w-full
+            h-125
+            object-cover
+            "
 
-/>
+            />
 
 
-<div
-className="
-p-6
-"
->
+            <div
+            className="
+            p-6
+            "
+            >
 
 
-<div className="flex justify-between items-center mb-3">
+                <div className="flex justify-between items-center mb-3">
 
-<h3
-className="
-text-2xl
-font-bold
-text-gray-900
-"
->
-{project.title}
-</h3>
+                    <h3
+                        className="
+                            text-2xl
+                            font-bold
+                            text-gray-900
+                        "
+                    >
+                        {project.title}
+                    </h3>
 
 
-<span
-className={`
-text-xs
-px-3
-py-1
-rounded-full
+                    <span
+                    className={`
+                        text-xs
+                        px-3
+                        py-1
+                        rounded-full
 
-${
-project.status === "Completed"
+                        ${
+                        project.status === "Completed"
 
-? "bg-green-100 text-green-700"
+                        ? "bg-green-100 text-green-700"
 
-: project.status === "In Development"
+                        : project.status === "In Development"
 
-? "bg-yellow-100 text-yellow-700"
+                        ? "bg-yellow-100 text-yellow-700"
 
-: "bg-purple-100 text-purple-700"
+                        : "bg-purple-100 text-purple-700"
 
-}
+                        }
 
-`}
->
+                    `}
+                    >
 
-{project.status}
+                    {project.status}
 
-</span>
+                    </span>
 
+                </div>
 
-</div>
 
+                <p
+                className="
+                    mt-3
+                    text-gray-600
+                    leading-relaxed
+                "
+                >
 
-<p
-className="
-mt-3
-text-gray-600
-leading-relaxed
-"
->
+                {project.description}
 
-{project.description}
+                </p>
 
-</p>
 
 
+                <div
+                className="
+                    flex
+                    flex-wrap
+                    gap-2
+                    mt-5
+                "
+                >
 
-<div
-className="
-flex
-flex-wrap
-gap-2
-mt-5
-"
->
+                    {
 
-{
+                        project.technologies.map((tech,index)=>(
 
-project.technologies.map((tech,index)=>(
+                            <span
 
-<span
+                            key={index}
 
-key={index}
+                            className="
+                            px-3
+                            py-1
+                            text-sm
+                            rounded-full
+                            bg-pink-100
+                            text-primary
+                            "
 
-className="
-px-3
-py-1
-text-sm
-rounded-full
-bg-pink-100
-text-primary
-"
+                            >
 
->
+                            {tech}
 
-{tech}
+                            </span>
 
-</span>
+                        ))
 
-))
+                    }
 
-}
+                </div>
 
-</div>
+                <div
+                className="
+                    flex
+                    gap-5
+                    mt-6
+                "
+                >
 
 
+                    <a
 
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                            flex
+                            items-center
+                            gap-2
+                            text-gray-700
+                            hover:text-primary
+                        "
+                    >
 
-<div
-className="
-flex
-gap-5
-mt-6
-"
->
+                    <FaGithub/>
 
+                    Github
 
-<a
+                    </a>
 
-href={project.github}
-target="_blank"
-rel="noopener noreferrer"
-className="
-flex
-items-center
-gap-2
-text-gray-700
-hover:text-primary
-"
 
->
+                </div>
 
-<FaGithub/>
 
-Github
+            </div>
 
-</a>
 
+        </motion.div>
 
-</div>
 
-
-</div>
-
-
-</motion.div>
-
-
-);
-
+    );
 
 }
 

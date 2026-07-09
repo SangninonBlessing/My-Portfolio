@@ -10,28 +10,28 @@ import Footer from "./Footer";
 
 function App() {
 
-  return (
-    <>
-      <Navbar />
+    return (
+        <>
+            <Navbar />
 
-      <Hero />
+            <Hero />
 
-      <About />
+            <About />
 
-      <Skills />
+            <Skills />
 
-      <Projects />
+            <Projects />
 
-      <Creative />
+            <Creative />
 
-      <Services />
+            <Services />
 
-      <Contact />
+            <Contact />
 
-      <Footer />
+            <Footer />
 
-    </>
-  );
+        </>
+    );
 }
 
 
